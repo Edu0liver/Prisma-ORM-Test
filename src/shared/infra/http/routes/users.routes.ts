@@ -3,7 +3,7 @@ import { CreateUserController } from "../../../../modules/users/controllers/Crea
 
 const userRoutes = express();
 
-const createUserController = new CreateUserController;
+const createUserController = new CreateUserController();
 
 userRoutes.post("/", createUserController.handle);
 
